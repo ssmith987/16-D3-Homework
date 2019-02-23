@@ -91,8 +91,8 @@ function renderAbbr(circlesAbbr, newXScale, chosenXAxis, newYScale, chosenYAxis)
 
   circlesAbbr.transition()
     .duration(1000)
-    .attr("dx", d => newXScale(d[chosenXAxis])) - .15
-    .attr("dy", d => newYScale(d[chosenYAxis])) - .19
+    .attr("dx", d => newXScale(d[chosenXAxis]) - 8)
+    .attr("dy", d => newYScale(d[chosenYAxis]) + 5)
 
   return circlesAbbr;
   

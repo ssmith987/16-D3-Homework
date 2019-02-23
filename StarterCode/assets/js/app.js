@@ -187,7 +187,7 @@ function updateToolTipA(chosenXAxis, chosenYAxis, circlesAbbr) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("assets/data/data.csv", function(err, healthData) {
+d3.csv("StarterCode/assets/data/data.csv", function(err, healthData) {
   if (err) throw err;
 
   // parse data
